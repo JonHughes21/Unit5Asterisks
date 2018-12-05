@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class Unit5Asterisks {
+	public static void main(String[] args) {
+		Scanner input = new Scanner (System.in);
+		
+		System.out.println("Enter an integer to display an asterisk square of that size");
+		int sides = input.nextInt();
+		squareOfAsterisks (sides, sides);		
+	}
+	
+	public static void squareOfAsterisks (int length, int height) {
+		for (int i = 0; i < height; i++) {
+			for (int j = 0; j < length; j++) {
+				System.out.print("*");
+			}
+			System.out.println();
+		}
+	}
+}
